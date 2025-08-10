@@ -1,0 +1,19 @@
+.stickyMask {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  mask-image: url("/saltbae.svg");
+  mask-position: 52.35% center;
+  mask-repeat: no-repeat;
+  mask-size: 30%;
+}
+
+.stickyMask img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
