@@ -1,11 +1,10 @@
-"use client"
+'use client'
 
-import { useGSAP } from "@gsap/react"
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import Image from "next/image"
-import { useRef } from "react"
-import styles from "./page.module.css"
+import { useGSAP } from '@gsap/react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useRef } from 'react'
+import { Marquee } from '../marquee'
 
 export function MaskReveal() {
   const container = useRef<HTMLDivElement>(null)
@@ -19,7 +18,7 @@ export function MaskReveal() {
     const maskTl = gsap.timeline({
       scrollTrigger: {
         trigger: container.current,
-        end: "+=6000px",
+        end: '+=6000px',
         scrub: true,
         pin: stickyMask.current,
         pinSpacing: true,
@@ -27,31 +26,32 @@ export function MaskReveal() {
     })
 
     maskTl.to(stickyMask.current, {
-      webkitMaskSize: "5000%",
-      maskSize: "5000%",
+      webkitMaskSize: '5000%',
+      maskSize: '5000%',
     })
   }, [])
 
   return (
     <div>
-      <div ref={container} className="relative bg-white">
-        <div className="w-screen h-screen absolute top-0 left-0 flex items-center justify-center gap-4 text-black text-8xl font-black font-sans">
-          <span>TEST</span>
-          <span>TEST</span>
-          <span>TEST</span>
-          <span>TEST</span>
-          <span>TEST</span>
-          <span>TEST</span>
+      <div ref={container} className='bg-sandy-beach relative h-screen'>
+        <div className='absolute top-0 left-0 flex h-screen w-screen items-center justify-center gap-4 font-sans text-8xl font-black text-black'>
+          <div className='bg-sandy-beach'>
+            <Marquee repeat={10}>
+              <h3 className='font-sink text-black-water text-shadow-sandy-beach dr-text-180 dr-mx-50 block leading-none'>
+                ANORMAL iYi
+              </h3>
+            </Marquee>
+          </div>
         </div>
-        <div ref={stickyMask} className={styles.stickyMask}>
+        {/* <div ref={stickyMask} className={styles.stickyMask}>
           <Image
-            src="/bg.jpg"
-            alt="Background"
-            style={{ height: "100%", width: "100%", objectFit: "cover" }}
+            src='/bg.jpg'
+            alt='Background'
+            style={{ height: '100%', width: '100%', objectFit: 'cover' }}
             fill
-            sizes="100vw"
+            sizes='100vw'
           />
-        </div>
+        </div> */}
       </div>
     </div>
   )
