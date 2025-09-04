@@ -1,6 +1,6 @@
 'use client'
 
-import { gsap } from '@/components/gsap'
+import { gsap } from 'gsap'
 import s from './scrollable-box.module.css'
 
 import cn from 'clsx'

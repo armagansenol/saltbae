@@ -1,6 +1,6 @@
 import { forwardRef } from 'react'
 
-import { cn } from '@/lib/utils'
+import cn from 'clsx'
 
 export interface VideoProps
   extends React.VideoHTMLAttributes<HTMLVideoElement> {
@@ -32,7 +32,7 @@ const Video = forwardRef<HTMLVideoElement, VideoProps>((props, ref) => {
   return (
     <video
       ref={ref}
-      className={cn('w-full h-full block object-cover', className)}
+      className={cn('block h-full w-full object-cover', className)}
       poster={poster}
       aria-hidden
       disableRemotePlayback
