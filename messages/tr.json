@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "title": "Saltbae Burger",
+    "description": "Her gün taze yapılan premium el yapımı burgerler"
+  },
+  "common": {
+    "welcome": "Hoş geldiniz",
+    "home": "Ana Sayfa",
+    "about": "Hakkında",
+    "contact": "İletişim"
+  },
+  "burger": {
+    "header": "Saltbae Burger'da,",
+    "subtitle": "her burger günlük taze, el yapımıdır.",
+    "premium": "Premium 180g",
+    "patties": "dana köfte,",
+    "morning": "her sabah öğütülür, üzerinde servis edilir",
+    "buns": "evde pişirilen özel ekmekler."
+  }
+}

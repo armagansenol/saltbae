@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "title": "Saltbae Burger",
+    "description": "Premium handcrafted burgers, made fresh daily"
+  },
+  "common": {
+    "welcome": "Welcome",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "burger": {
+    "header": "At Saltbae Burger,",
+    "subtitle": "each burger is handcrafted fresh, daily.",
+    "premium": "Premium 180g",
+    "patties": "beef patties,",
+    "morning": "ground every morning, served on",
+    "buns": "signature buns baked in-house."
+  }
+}
